@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import SearchSection from './components/SearchSection';
 import ProfileSummary from './components/ProfileSummary';
@@ -95,6 +96,7 @@ export default function App() {
       <footer className="app__footer">
         Built with ♥ by two cool CS Majors · Powered by the GitHub API
       </footer>
+      <Analytics />
     </div>
   );
 }
