@@ -12,10 +12,10 @@ export default function Navbar() {
         <div className="navbar-capsule__center">
           <img src="/favicon.png" alt="GitSum Logo" className="navbar-capsule__logo" />
         </div>
-        
+
         <div className="navbar-capsule__right-links">
           <a href="/" className="navbar-capsule__link">Home</a>
-          <a href="https://github.com/yourusername/gitsum" target="_blank" rel="noopener noreferrer" className="navbar-capsule__icon-link">
+          <a href="https://github.com/khushkaramchandani/gitsum" target="_blank" rel="noopener noreferrer" className="navbar-capsule__icon-link">
             <FiGithub size={20} />
           </a>
         </div>

@@ -10,7 +10,8 @@ import ErrorDisplay from './components/ErrorDisplay';
 import './App.css';
 
 // Local Proxy Server API URL
-const GITHUB_API = 'http://localhost:5000/api/github';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://gitsum.onrender.com';
+const GITHUB_API = `${API_BASE_URL}/api/github`;
 
 function LoadingSkeleton() {
   return (
