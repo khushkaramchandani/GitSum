@@ -1,0 +1,70 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app__bg-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(88, 166, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(188, 140, 255, 0.04) 0%, transparent 50%);
+}
+
+.app__content {
+  flex: 1;
+}
+
+.app__footer {
+  padding: var(--space-xl) var(--space-xl) var(--space-lg);
+  text-align: center;
+  border-top: 1px solid var(--border-primary);
+  color: var(--text-tertiary);
+  font-size: 0.8rem;
+}
+
+.app__footer a {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.app__footer a:hover {
+  color: var(--text-link);
+}
+
+/* Loading skeleton shimmer */
+.loading-section {
+  padding: 0 var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--bg-tertiary) 50%, var(--bg-secondary) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+.skeleton--card {
+  height: 160px;
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-md);
+}
+
+.skeleton--row {
+  height: 24px;
+  margin-bottom: var(--space-sm);
+  width: 60%;
+}
+
+.skeleton--row:nth-child(2) {
+  width: 40%;
+}

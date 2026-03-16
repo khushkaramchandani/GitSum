@@ -1,0 +1,52 @@
+.contribution-graph {
+  margin-bottom: var(--space-3xl);
+  animation: fadeInUp 0.5s var(--transition-slow) both;
+  animation-delay: 0.3s;
+}
+
+.contribution-graph__card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contribution-graph__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+  width: 100%;
+}
+
+.contribution-graph__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.contribution-graph__title svg {
+  color: var(--accent-green);
+}
+
+.contribution-graph__calendar-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+  display: flex;
+  justify-content: center;
+}
+
+.contribution-graph__loading,
+.contribution-graph__error {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  padding: var(--space-xl) 0;
+  text-align: center;
+}

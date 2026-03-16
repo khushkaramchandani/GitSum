@@ -1,0 +1,115 @@
+.navbar-wrapper {
+  position: fixed;
+  top: var(--space-lg);
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-capsule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 32px 6px 24px;
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  min-width: 400px;
+}
+
+.navbar-capsule__left,
+.navbar-capsule__right-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-capsule__left {
+  justify-content: center;
+}
+
+.navbar-capsule__right-links {
+  justify-content: flex-end;
+  gap: var(--space-lg);
+}
+
+.navbar-capsule__brand {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  margin-right: var(--space-md);
+}
+
+.navbar-capsule__link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.navbar-capsule__link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.navbar-capsule__icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all var(--transition-fast);
+}
+
+.navbar-capsule__icon-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.navbar-capsule__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-md);
+  position: relative;
+}
+
+/* Creating the subtle white glow below the logo as seen in the reference */
+.navbar-capsule__center::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.8) 0%, transparent 80%);
+  border-radius: 50%;
+}
+
+.navbar-capsule__logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+.navbar-capsule__logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+}
