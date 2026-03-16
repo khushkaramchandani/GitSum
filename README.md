@@ -75,20 +75,12 @@ cd gitsum
 
 ---
 
-## 🛡️ Security Note
-
-This project uses a backend proxy to interact with the GitHub API. **Never** expose your `GITHUB_TOKEN` in the frontend code. Always keep it in the `server/.env` file, which is ignored by Git.
-
----
 
 ## 📄 License
 
 Individual/Educational use.
-<<<<<<< HEAD
 
 ---
+## 📒 Roadmap
 
-##Roadmap
 In the next version, users would be able to export the report into PDF and JSON.
-=======
->>>>>>> 6771e19 (remove node_modules from repo)
