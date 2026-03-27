@@ -1,6 +1,7 @@
 # 📊 GitSum
 
 **GitSum** is a modern, premium web application designed to provide deep insights and analytics into GitHub user profiles and repositories. Built with a sleek design and a performant proxy backend, it allows users to explore GitHub data seamlessly.
+- Made By [Nityansh Pandey](https://github.com/nityanshpandey) and [Khush Karamchandani](https://github.com/khushkaramchandani)
 
 ---
 
