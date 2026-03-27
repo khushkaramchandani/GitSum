@@ -83,4 +83,5 @@ Individual/Educational use.
 ---
 ## 📒 Roadmap
 
-In the next version, users would be able to export the report into PDF and JSON.
+In the next version, users would be able to create a resume based on their github profile.
+
